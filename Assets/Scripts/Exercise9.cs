@@ -5,28 +5,24 @@ using UnityEngine.UI;
 
 public class Exercise9 : MonoBehaviour
 {
-    public Toggle lightSwitch;
-    public GameObject pointLight;
+    public Toggle Switch;
+    public Light PointLight;
 
     private void Start()
     {
-        // Default state according to toggle value.
-        SwitchLight(lightSwitch.isOn);
+        PointLightSwitch(Switch.isOn);
     }
 
-    // Turn the light on and off.
-    public void SwitchLight(bool isOn)
+    //This means that when we press the switch, it will turn the light on or off
+    public void PointLightSwitch(bool isOn)
     {
-        // If is ON
         if (isOn)
         {
-            // Enable the Point Light.
-            pointLight.GetComponent<Light>().enabled = true;
+            PointLight.enabled = true;
         }
         else
         {
-            // Disable the Point Light.
-            pointLight.GetComponent<Light>().enabled = false;
+            PointLight.enabled = false;
         }
     }
 }

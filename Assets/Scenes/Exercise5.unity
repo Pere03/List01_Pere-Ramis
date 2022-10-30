@@ -386,9 +386,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Positions:
+  - {x: 1, y: 1, z: 1}
   - {x: 2, y: 2, z: 2}
-  - {x: 5, y: 5, z: 5}
-  - {x: 1, y: 3, z: 2}
+  - {x: 3, y: 3, z: 3}
   Capsule: {fileID: 3124730278336342655, guid: 56045ff0c01ab2548ae13cf6e012c535, type: 3}
 --- !u!4 &855029071
 Transform:

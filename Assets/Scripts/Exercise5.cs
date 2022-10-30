@@ -9,19 +9,17 @@ public class Exercise5 : MonoBehaviour
 
     void Update()
     {
-        // If the S key is pressed
+        // If the S key is pressed all the objects in the scene that have the "Capsule" tag will be stored in an array and every capsule will be destroyed 
         if (Input.GetKeyDown(KeyCode.S))
         {
-            //We store all the objects in the scene that have the "Capsule" tag in an array
-            GameObject[] capsulesInGame = GameObject.FindGameObjectsWithTag("Capsule");
+            GameObject[] Capsules = GameObject.FindGameObjectsWithTag("Capsule");
 
-            //Every existing capsule will be erased
-            foreach (GameObject capsule in capsulesInGame)
+            foreach (GameObject capsule in Capsules)
             {
                 Destroy(capsule);
             }
 
-            //Instantiate a capsule at each position of the array.
+            //This will instantiate a capsule in each position of the array that we have assigned in the inspector
             foreach (Vector3 position in Positions)
             {
                 Instantiate(Capsule, position, Capsule.transform.rotation);

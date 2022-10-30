@@ -8,9 +8,9 @@ public class Exercise3 : MonoBehaviour
     public float yRange = 3f;
     public float zRange = 3f;
 
-    public float xPos;
-    public float yPos;
-    public float zPos;
+    private float xPos;
+    private float yPos;
+    private float zPos;
    
 
     void Update()

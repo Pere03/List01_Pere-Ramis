@@ -13,7 +13,7 @@ public class Exercise6 : MonoBehaviour
         matCylinder = Cylinder.GetComponent<Renderer>().material;
     }
 
-    //Depending on which option you choose, the color of the cylinder will change.
+    //Depending on which option you choose, the color of the cylinder will change
     public void ChangeColor(int index)
     {
         switch (index)
